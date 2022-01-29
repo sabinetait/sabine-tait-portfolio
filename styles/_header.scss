@@ -1,0 +1,106 @@
+// Header
+
+header {
+    background-color: $light-orange;
+    height: 100vh;
+}
+
+.top-nav {
+    margin: 0;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+       display: flex;
+    
+       a {
+           color: $dark-grey;
+           margin-left: 3%;
+       }
+
+       a:hover,
+       a:focus {
+           text-decoration: underline;
+       }
+    } 
+}
+
+.logo {
+    font-size: 1.9rem;
+    color: $dark-grey;
+}
+
+.title-container {
+    position: relative;
+}
+
+.decoration {
+    display: flex;
+    justify-content: center;
+}
+
+div.large-circle {
+    background-color: $red-orange;
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+
+}
+
+div.small-circle {
+    background-color: $white;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+}
+
+.title {
+    z-index: 2;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    span {
+        padding-left: 50px;
+    }
+}
+
+.socials-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 65vh;
+
+    ul {
+        li {
+            margin-top: 1%;
+        }
+
+        a {
+            color: $dark-grey;
+            padding: 0;
+        }
+
+        a:hover,
+        a:focus {
+            color: $red-orange;
+        }
+    }
+}
+
+.down-arrow {
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
+}
