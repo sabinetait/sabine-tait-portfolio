@@ -3,6 +3,8 @@
 header {
     background-color: $light-orange;
     height: 100vh;
+    background-image: url(../assests/wave-pattern.png);
+    background-size: 22%;
 }
 
 .top-nav {
@@ -14,10 +16,12 @@ header {
 
     ul {
        display: flex;
+       justify-content: space-between;
+       width: 35%;
     
        a {
            color: $dark-grey;
-           margin-left: 3%;
+           
        }
 
        a:hover,
