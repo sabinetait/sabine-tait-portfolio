@@ -256,6 +256,7 @@ li {
 
 h1,
 h2,
+h3,
 .logo {
   font-family: "OPTICuento";
 }
@@ -265,7 +266,6 @@ h1 {
   font-size: 2.7rem;
 }
 
-h3,
 h4,
 p,
 a,
@@ -358,6 +358,98 @@ div.small-circle {
   padding-left: 50px;
 }
 
+.down-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80vh;
+}
+.down-arrow img {
+  height: 70px;
+  width: 70px;
+}
+
+.about-section {
+  height: 100vh;
+  margin: 5% 0;
+}
+.about-section .bio {
+  margin-bottom: 5%;
+}
+
+.square-decoration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.square-decoration .small-square {
+  height: 5px;
+  width: 5px;
+  background-color: #fc5b1b;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+.square-decoration .med-square {
+  height: 9px;
+  width: 9px;
+  background-color: #fc5b1b;
+  margin-left: 2px;
+}
+.square-decoration .large-square {
+  height: 20px;
+  width: 20px;
+  background-color: #fc5b1b;
+  margin-left: 2px;
+}
+
+h2 {
+  margin: 2% 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 2% 0;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.skills-gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.skills-gallery ul li {
+  margin: 2% 4%;
+  width: calc((100% / 5) - 8%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.skills-gallery ul li p {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10%;
+}
+.skills-gallery ul li i {
+  font-size: 4rem;
+  text-align: center;
+  color: #3a3a3a;
+}
+
 .socials-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +459,6 @@ div.small-circle {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
-  margin-top: 65vh;
 }
 .socials-nav ul li {
   margin-top: 1%;
@@ -379,17 +470,4 @@ div.small-circle {
 .socials-nav ul a:hover,
 .socials-nav ul a:focus {
   color: #fc5b1b;
-}
-
-.down-arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.down-arrow img {
-  height: 70px;
-  width: 70px;
 }

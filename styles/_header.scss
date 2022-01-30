@@ -72,32 +72,10 @@ div.small-circle {
     }
 }
 
-.socials-nav {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin-top: 65vh;
-
-    ul {
-        li {
-            margin-top: 1%;
-        }
-
-        a {
-            color: $dark-grey;
-            padding: 0;
-        }
-
-        a:hover,
-        a:focus {
-            color: $red-orange;
-        }
-    }
-}
-
 .down-arrow {
     display: flex;
     justify-content: center;
+    margin-top: 80vh;
 
     img {
         height: 70px;
