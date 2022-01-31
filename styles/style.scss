@@ -13,32 +13,8 @@ $dark-grey: rgb(58, 58, 58);
 @import "about";
 
 @import "projects";
-// Contact 
 
-
-.socials-nav {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    width: 25%;
-
-    ul {
-        li {
-            margin-top: 1%;
-            font-size: 2rem;
-        }
-
-        a {
-            color: $dark-grey;
-            padding: 0;
-        }
-
-        a:hover,
-        a:focus {
-            color: $red-orange;
-        }
-    }
-}
+@import "contact";
 
 // Footer
 

@@ -228,6 +228,7 @@ html {
 
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -307,7 +308,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 35%;
+  width: 35vw;
 }
 .top-nav ul a {
   color: #3a3a3a;
@@ -380,7 +381,7 @@ div.small-circle {
 
 .about-section {
   height: 100vh;
-  margin: 4% 0;
+  margin: 4% 0 0;
 }
 .about-section .bio {
   margin-bottom: 4%;
@@ -451,53 +452,16 @@ h3 {
   padding-top: 10%;
 }
 .skills-gallery ul li i {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: center;
   color: #3a3a3a;
 }
 
 .projects-section {
   background-color: #f5e8e0;
-  padding-bottom: 3%;
-}
-
-.square-decoration2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 3%;
-}
-.square-decoration2 .small-square {
-  height: 5px;
-  width: 5px;
-  background-color: #fc5b1b;
-  margin-left: 2px;
-  margin-bottom: 2px;
-}
-.square-decoration2 .med-square {
-  height: 9px;
-  width: 9px;
-  background-color: #fc5b1b;
-  margin-left: 2px;
-}
-.square-decoration2 .long-square {
-  height: 20px;
-  width: 5px;
-  background-color: #fc5b1b;
-  margin-left: 2px;
-  margin-bottom: 2px;
-}
-.square-decoration2 .large-square {
-  height: 20px;
-  width: 20px;
-  background-color: #fc5b1b;
-  margin-left: 2px;
-  margin-top: 4px;
+  padding: 3% 0;
+  background-image: url(../assests/wave-pattern.png);
+  background-size: 22%;
 }
 
 .project-container {
@@ -505,6 +469,8 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   margin: 5% 0;
+  background-color: rgba(245, 232, 224, 0.6);
+  padding: 1%;
 }
 .project-container .project-image,
 .project-container .project-text {
@@ -564,28 +530,78 @@ h3 {
   width: 30px;
 }
 
-.socials-nav {
+.square-decoration2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 0;
-  width: 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 3%;
 }
-.socials-nav ul li {
-  margin-top: 1%;
-  font-size: 2rem;
+.square-decoration2 .small-square {
+  height: 5px;
+  width: 5px;
+  background-color: #fc5b1b;
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
-.socials-nav ul a {
-  color: #3a3a3a;
-  padding: 0;
+.square-decoration2 .med-square {
+  height: 9px;
+  width: 9px;
+  background-color: #fc5b1b;
+  margin-left: 2px;
 }
-.socials-nav ul a:hover,
-.socials-nav ul a:focus {
-  color: #fc5b1b;
+.square-decoration2 .long-square {
+  height: 20px;
+  width: 5px;
+  background-color: #fc5b1b;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+.square-decoration2 .large-square {
+  height: 20px;
+  width: 20px;
+  background-color: #fc5b1b;
+  margin-left: 2px;
+  margin-top: 4px;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4%;
+}
+.contact .email-button {
+  background-color: #3a3a3a;
+  padding: 1.5% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+}
+.contact .email-button i {
+  font-size: 1.4rem;
+  color: #f4f4f2;
+}
+.contact .email-button p {
+  color: #f4f4f2;
+}
+.contact .email-button:hover,
+.contact .email-button:focus {
+  background-color: #fc5b1b;
 }
 
 footer {
