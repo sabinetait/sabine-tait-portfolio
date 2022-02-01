@@ -371,7 +371,7 @@ div.small-circle {
 .title {
   z-index: 2;
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 20%;
 }
 .title span {
@@ -420,6 +420,12 @@ div.small-circle {
   line-height: 1.6rem;
 }
 .about-container .about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 30%;
 }
 .about-container .about-image img {
@@ -673,4 +679,51 @@ footer p {
 }
 footer p i {
   color: #fc5b1b;
+}
+
+@media (max-width: 950px) {
+  .about-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-container .about-image {
+    margin-bottom: 4%;
+    width: 40%;
+  }
+  .about-container .about-text {
+    width: 100%;
+  }
+  .about-container .about-text p {
+    margin-bottom: 4%;
+    text-align: center;
+  }
+
+  .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project-container .project-image,
+.project-container .project-text {
+    width: 100%;
+  }
+}
+@media (max-width: 750px) {
+  .skills-gallery ul li {
+    width: calc((100% / 4) - 8%);
+  }
+
+  .contact-container h3 {
+    margin: 7% 0;
+  }
+
+  .contact {
+    margin-bottom: 7%;
+  }
 }

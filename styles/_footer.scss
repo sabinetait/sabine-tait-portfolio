@@ -1,0 +1,17 @@
+// Footer
+
+footer {
+    background-color: black;
+    height: 7vh;
+
+    p {
+        color: $white;
+        padding: 1% 0;
+        text-align: center;
+        font-size: 16px;
+
+        i {
+            color: $red-orange;
+        }
+    }
+}

@@ -23,7 +23,8 @@
 
 
     .about-image {
-
+        display: flex;
+        align-items: center;
         width: 30%;
 
         img {
