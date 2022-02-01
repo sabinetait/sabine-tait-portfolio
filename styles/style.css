@@ -242,7 +242,7 @@ p {
 
 .wrapper {
   max-width: 1400px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -264,8 +264,21 @@ h3,
 
 h1 {
   text-transform: uppercase;
+  line-height: 3.2rem;
   font-size: 2.7rem;
   text-shadow: 0px 3px 10px rgba(29, 29, 29, 0.15), 0px 13px 2px rgba(29, 29, 29, 0.1), 0px 23px 30px rgba(29, 29, 29, 0.1);
+}
+
+h2 {
+  margin: 2% 0;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 2% 0;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 h4,
@@ -285,7 +298,7 @@ header {
   background-color: #f5e8e0;
   height: 100vh;
   background-image: url(../assests/wave-pattern.png);
-  background-size: 22%;
+  background-size: 330px;
 }
 
 .top-nav {
@@ -358,7 +371,7 @@ div.small-circle {
 .title {
   z-index: 2;
   position: absolute;
-  top: 20%;
+  top: 30%;
   left: 20%;
 }
 .title span {
@@ -380,11 +393,38 @@ div.small-circle {
 }
 
 .about-section {
-  height: 100vh;
-  margin: 4% 0 0;
+  margin: 4% 0;
 }
 .about-section .bio {
   margin-bottom: 4%;
+}
+
+.about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-container .about-text {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about-container .about-text p {
+  line-height: 1.6rem;
+}
+.about-container .about-image {
+  width: 30%;
+}
+.about-container .about-image img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .square-decoration {
@@ -424,7 +464,7 @@ h2 {
 
 h3 {
   margin: 2% 0;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
@@ -437,7 +477,7 @@ h3 {
 }
 .skills-gallery ul li {
   margin: 2% 4%;
-  width: calc((100% / 5) - 8%);
+  width: calc((100% / 6) - 8%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -461,7 +501,7 @@ h3 {
   background-color: #f5e8e0;
   padding: 3% 0;
   background-image: url(../assests/wave-pattern.png);
-  background-size: 22%;
+  background-size: 330px;
 }
 
 .project-container {
@@ -470,7 +510,7 @@ h3 {
   display: flex;
   margin: 5% 0;
   background-color: rgba(245, 232, 224, 0.6);
-  padding: 1%;
+  padding: 3% 1%;
 }
 .project-container .project-image,
 .project-container .project-text {
@@ -498,6 +538,9 @@ h3 {
 .project-container .project-text h3 {
   text-align: left;
 }
+.project-container .project-text p {
+  line-height: 1.6rem;
+}
 .project-container .project-text .peer-link {
   color: black;
 }
@@ -510,6 +553,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 3% 0;
 }
 .project-container .project-text ul li {
   font-size: 1.5rem;

@@ -4,7 +4,7 @@
     background-color: $light-orange;
     padding: 3% 0;
     background-image: url(../assests/wave-pattern.png);
-    background-size: 22%;
+    background-size: 330px;
 
 }
 
@@ -12,7 +12,7 @@
     display: flex;
     margin: 5% 0;
     background-color: rgba(245, 232, 224, 0.6);
-    padding: 1%;
+    padding: 3% 1%;
 
     .project-image,
     .project-text {
@@ -37,6 +37,10 @@
             text-align: left;
         }
 
+        p {
+            line-height: 1.6rem;
+        }
+
         .peer-link {
             color: black;
         }
@@ -49,6 +53,7 @@
 
         ul {
             display: flex;
+            margin: 3% 0;
 
             li {
                 font-size: 1.5rem;

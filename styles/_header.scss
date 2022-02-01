@@ -4,7 +4,7 @@ header {
     background-color: $light-orange;
     height: 100vh;
     background-image: url(../assests/wave-pattern.png);
-    background-size: 22%;
+    background-size: 330px;
 }
 
 .top-nav {
@@ -68,7 +68,7 @@ div.small-circle {
 .title {
     z-index: 2;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 20%;
 
     span {
