@@ -1,0 +1,88 @@
+// Header
+
+header {
+    background-color: $light-orange;
+    height: 100vh;
+    background-image: url(../assests/wave-pattern.png);
+    background-size: 330px;
+}
+
+.top-nav {
+    margin: 0;
+    padding-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+       display: flex;
+       justify-content: space-between;
+       width: 35vw;
+    
+       a {
+           color: $dark-grey;
+           
+       }
+
+       a:hover,
+       a:focus {
+           text-decoration: underline;
+       }
+    } 
+}
+
+.logo {
+    font-size: 1.9rem;
+    color: $dark-grey;
+}
+
+.title-container {
+    position: relative;
+}
+
+.decoration {
+    display: flex;
+    justify-content: center;
+}
+
+div.large-circle {
+    background-color: $red-orange;
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+
+}
+
+div.small-circle {
+    background-color: $white;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 57%;
+}
+
+.title {
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+
+    span {
+        padding-left: 50px;
+    }
+}
+
+.down-arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 80vh;
+
+    img {
+        height: 70px;
+        width: 70px;
+    }
+}
