@@ -4,6 +4,7 @@ $light-orange: rgb(245, 232, 224);
 $white: rgb(244, 244, 242);
 $dark-grey: rgb(58, 58, 58);
 
+// Imports
 @import "normalize";
 
 @import "typography";
@@ -18,53 +19,4 @@ $dark-grey: rgb(58, 58, 58);
 
 @import "footer";
 
-// Media Queries
-@media (max-width: 950px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-
-        .about-image {
-            margin-bottom: 4%;
-            width: 40%;
-        }
-
-        .about-text {
-            width: 100%;
-
-            p {
-                margin-bottom: 4%;
-                text-align: center;
-            }
-        }
-    }
-
-    .project-container {
-        flex-direction: column;
-
-        .project-image,
-        .project-text {
-            width: 100%;
-        }
-    }
-}
-
-@media(max-width: 750px) {
-    .skills-gallery {
-        ul {
-            li {
-                width: calc((100% / 4) - 8%);
-            }
-        }
-    }
-
-    .contact-container {
-        h3 {
-            margin: 7% 0;
-        }
-    }
-    
-    .contact {
-        margin-bottom: 7%;
-    }
-}
+@import "media-queries";
