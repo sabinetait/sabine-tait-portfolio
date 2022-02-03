@@ -251,6 +251,10 @@ ul {
   margin: 0;
 }
 
+@font-face {
+  font-family: "OPTICuento";
+  src: url(/assests/OPTICuento.otf) format(otf);
+}
 li {
   list-style: none;
 }
@@ -259,7 +263,7 @@ h1,
 h2,
 h3,
 .logo {
-  font-family: "OPTICuento";
+  font-family: "OPTICuento", "Courier New", Courier, monospace;
 }
 
 h1 {
@@ -301,18 +305,61 @@ header {
   background-size: 330px;
 }
 
+.header-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2%;
+}
+.header-nav-container .hamburger {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20px;
+  visibility: collapse;
+  z-index: 20;
+}
+.header-nav-container .hamburger .bar {
+  width: 30px;
+  height: 3px;
+  background: #3a3a3a;
+}
+
+.logo {
+  font-size: 1.9rem;
+  color: #3a3a3a;
+  z-index: 20;
+}
+
 .top-nav {
   margin: 0;
-  padding-top: 1%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
 }
 .top-nav ul {
   display: -webkit-box;
@@ -331,9 +378,50 @@ header {
   text-decoration: underline;
 }
 
-.logo {
-  font-size: 1.9rem;
+.mobile-nav {
+  position: fixed;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 0.4s -webkit-transform ease;
+  transition: 0.4s -webkit-transform ease;
+  transition: 0.4s transform ease;
+  transition: 0.4s transform ease, 0.4s -webkit-transform ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  visibility: hidden;
+}
+.mobile-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: rgba(245, 232, 224, 0.95);
+  height: 100vh;
+  padding-top: 15%;
+}
+.mobile-nav ul a {
+  padding: 3% 0;
   color: #3a3a3a;
+}
+.mobile-nav ul a:hover,
+.mobile-nav ul a:focus {
+  text-decoration: underline;
+}
+
+.opened {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
 }
 
 .title-container {
@@ -354,7 +442,6 @@ div.large-circle {
   height: 550px;
   width: 550px;
   border-radius: 50%;
-  position: absolute;
   z-index: 1;
 }
 
@@ -385,7 +472,6 @@ div.small-circle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 80vh;
 }
 .down-arrow img {
   height: 70px;
@@ -682,6 +768,14 @@ footer p i {
 }
 
 @media (max-width: 950px) {
+  .top-nav {
+    display: none;
+  }
+
+  .header-nav-container .hamburger {
+    visibility: visible;
+  }
+
   .about-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -765,12 +859,16 @@ footer p i {
 }
 @media (max-width: 600px) {
   h1 {
-    font-size: 2.3rem;
-    line-height: 2.5rem;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    text-align: center;
   }
 
+  .title {
+    padding-top: 10%;
+  }
   .title span {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding-left: 0px;
   }
 }
@@ -812,13 +910,48 @@ a {
   }
 }
 @media (max-width: 400px) {
+  h1 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .title {
+    padding-top: 10%;
+  }
+  .title span {
+    font-size: 1.5rem;
+  }
+
+  div.large-circle {
+    margin-top: 120px;
+    height: 300px;
+    width: 300px;
+  }
+
+  div.small-circle {
+    height: 100px;
+    width: 100px;
+    top: 53%;
+    left: 55%;
+  }
+
+  h2 {
+    margin: 10% 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
   .square-decoration,
 .square-decoration2 {
     margin-bottom: 10%;
   }
 
   .contact-container h3 {
-    margin: 12% 0;
+    margin: 20% 0;
   }
 
   .contact {

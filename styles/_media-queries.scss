@@ -1,5 +1,15 @@
 // Media Queries
 @media (max-width: 950px) {
+    .top-nav {
+        display: none;
+    }
+
+    .header-nav-container {
+        .hamburger {
+            visibility: visible;
+        }
+    }
+
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -81,13 +91,15 @@
 
 @media(max-width: 600px) {
     h1 {
-        font-size: 2.3rem;
-        line-height: 2.5rem;
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+        text-align: center;
     }
 
     .title {
+        padding-top: 10%;
         span {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             padding-left: 0px;
         }
     }
@@ -141,6 +153,42 @@
 }
 
 @media(max-width: 400px) {
+
+    h1 {
+        font-size: 1.7rem;
+        line-height: 2rem;
+    }
+
+    .title {
+        padding-top: 10%;
+        span {
+            font-size: 1.5rem;
+        }
+    }
+
+    div.large-circle {
+        margin-top: 120px;
+        height: 300px;
+        width: 300px;
+    }
+    
+    div.small-circle {
+        height: 100px;
+        width: 100px;
+        top: 53%;
+        left: 55%;
+    }
+
+    h2 {
+        margin: 10% 0;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
     .square-decoration,
     .square-decoration2 {
         margin-bottom: 10%;
@@ -148,7 +196,7 @@
 
     .contact-container {
         h3 {
-            margin: 12% 0;
+            margin: 20% 0;
         }
     }
     
