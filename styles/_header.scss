@@ -79,15 +79,17 @@ header {
         height: 100vh;
         padding-top: 15%;
 
-
-        a {
+        li {
             padding: 3% 0;
-            color: $dark-grey;
-        }
 
-        a:hover,
-        a:focus {
-            text-decoration: underline;
+            a {
+                color: $dark-grey;
+            }
+            
+            a:hover,
+            a:focus {
+                text-decoration: underline;
+            }
         }
 
     }
