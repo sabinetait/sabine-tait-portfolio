@@ -382,8 +382,8 @@ header {
 
 .mobile-nav {
   position: fixed;
-  -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
   -webkit-transition: 0.4s -webkit-transform ease;
   transition: 0.4s -webkit-transform ease;
   transition: 0.4s transform ease;
@@ -681,6 +681,45 @@ div.small-circle {
   width: 30px;
 }
 
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.active {
+  opacity: 1;
+}
+
+.active.fade-in-left {
+  -webkit-animation: fade-left 1s ease-in;
+          animation: fade-left 1s ease-in;
+}
+
+@-webkit-keyframes fade-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
 .square-decoration2 {
   display: -webkit-box;
   display: -ms-flexbox;
