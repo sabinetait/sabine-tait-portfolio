@@ -16,17 +16,17 @@ header {
     .hamburger {
         cursor: pointer;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        height: 20px;
         visibility: collapse;
         z-index: 20;
 
-        .bar {
-            width: 30px;
-            height: 3px;
-            background: $dark-grey;
+        i {
+            font-size: 1.5rem;
+            color: $dark-grey;
+        }
+        i:hover,
+        i:focus {
+            color: $red-orange;
         }
     }
 }
