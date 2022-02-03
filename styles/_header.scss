@@ -62,14 +62,13 @@ header {
 
 .mobile-nav {
     position: fixed;
-    transform: translateY(-100%);
+    transform: translateY(-110%);
     transition: 0.4s transform ease;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 10;
-    visibility: hidden;
 
     ul {
         display: flex;
@@ -96,7 +95,6 @@ header {
 
 .opened {
     transform: translateY(0);
-    visibility: visible;
 }
 
 .title-container {
@@ -146,3 +144,17 @@ div.small-circle {
         width: 70px;
     }
 }
+
+.bounce {
+    animation: bounce 2500ms infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(15px);
+    }
+
+    60% {
+      transform: translateY(-10px);
+    }
+  }
