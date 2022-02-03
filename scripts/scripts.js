@@ -24,3 +24,23 @@ const mobileNavLinkElement = document.querySelectorAll(".menu-link");
 mobileNavLinkElement.forEach((link) => {
     link.addEventListener('click', navToggle);
 })
+
+// Project section animation on scroll
+// Capture project containter element
+const revealElement = document.querySelectorAll(".reveal");
+
+// Reveal function that will add/remove the active class to project container at certain from the top viewport
+reveal = () => {
+    for (let i = 0; i < revealElement.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = revealElement[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+        revealElement[i].classList.add("active");
+    } else {
+        revealElement[i].classList.remove("active");
+    }
+    }
+}
+// Add event listener to scroll, call the reveal function
+window.addEventListener("scroll", reveal);
