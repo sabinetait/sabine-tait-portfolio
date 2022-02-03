@@ -1,7 +1,10 @@
 // Typography
 @font-face {
-    font-family: 'OPTICuento';
-    src: url(/assests/OPTICuento.otf) format(otf);
+    font-family: 'opticuento';
+    src: url('../assests/font/opticuento-webfont.woff2') format('woff2'),
+         url('../assests/font/opticuento-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 li {
@@ -13,7 +16,7 @@ h1,
 h2,
 h3,
 .logo {
-    font-family: 'OPTICuento', "Courier New", Courier, monospace;
+    font-family: 'opticuento';
 }
 
 h1 {
