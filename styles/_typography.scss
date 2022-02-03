@@ -1,4 +1,9 @@
 // Typography
+@font-face {
+    font-family: 'OPTICuento';
+    src: url(/assests/OPTICuento.otf) format(otf);
+}
+
 li {
     list-style: none;
 }
@@ -8,7 +13,7 @@ h1,
 h2,
 h3,
 .logo {
-    font-family: 'OPTICuento';
+    font-family: 'OPTICuento', "Courier New", Courier, monospace;
 }
 
 h1 {

@@ -15,19 +15,37 @@
 </head>
 <body>
     <header>
-        <div class="header wrapper"> <!-- beginning of header wrapper -->
-            <nav class="top-nav">
-                <div>
-                    <p class="logo" aria-hidden="true">ST</p>
+        <div class="header wrapper"> <!-- beginning of header wrapper1 -->
+            <div class="header-nav-container">
+                <p class="logo" aria-hidden="true">ST</p>
+            
+                <nav class="top-nav">
+                    <ul>
+                        <a href="#about"><li>About</li></a> 
+                        <a href="#projects"><li>Projects</li></a> 
+                        <a href="#contact"><li>Contact</li></a> 
+                        <a href=""><li>Resume</li></a>
+                    </ul>
+                </nav>
+
+                <div class="hamburger" aria-label="Menu"> <!-- mobile menu icon -->
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
-                <ul>
-                    <a href="#about"><li>About</li></a> 
-                    <a href="#projects"><li>Projects</li></a> 
-                    <a href="#contact"><li>Contact</li></a> 
-                    <a href=""><li>Resume</li></a>
-                </ul>
-            </nav>
+            </div>
+        </div> <!-- end of header wrapper1 -->
+
+        <nav class="mobile-nav"> <!-- mobile nav -->
+            <ul>
+                <a href="#about" class="menu-link"><li>About</li></a> 
+                <a href="#projects" class="menu-link"><li>Projects</li></a> 
+                <a href="#contact" class="menu-link"><li>Contact</li></a> 
+                <a href="" class="menu-link"><li>Resume</li></a>
+            </ul>
+        </nav>
     
+        <div class="wrapper"> <!-- beginning of header wrapper2 -->
             <div class="title-containter"> <!-- decorative circles and title -->
                 <div class="decoration">
                     <div class="large-circle"></div>
@@ -38,10 +56,10 @@
                 </div>
             </div> <!-- decorative circles and title -->
     
-            <div class="down-arrow">
+            <div class="down-arrow bounce">
                 <img src="./assests/arrow-down.png" alt="Arrow down">
             </div>
-        </div> <!-- end of header wrapper -->
+        </div><!-- end of header wrapper2 -->
         
     </header>
 
@@ -272,5 +290,6 @@
         </div> 
         
     </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>

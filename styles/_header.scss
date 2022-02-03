@@ -7,12 +7,42 @@ header {
     background-size: 330px;
 }
 
+.header-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+
+    .hamburger {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+        visibility: collapse;
+        z-index: 20;
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background: $dark-grey;
+        }
+    }
+}
+
+.logo {
+    font-size: 1.9rem;
+    color: $dark-grey;
+    z-index: 20;
+}
+
 .top-nav {
     margin: 0;
-    padding-top: 1%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 100%;
 
     ul {
        display: flex;
@@ -21,7 +51,6 @@ header {
     
        a {
            color: $dark-grey;
-           
        }
 
        a:hover,
@@ -31,9 +60,41 @@ header {
     } 
 }
 
-.logo {
-    font-size: 1.9rem;
-    color: $dark-grey;
+.mobile-nav {
+    position: fixed;
+    transform: translateY(-110%);
+    transition: 0.4s transform ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(245, 232, 224, 0.95);
+        height: 100vh;
+        padding-top: 15%;
+
+
+        a {
+            padding: 3% 0;
+            color: $dark-grey;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+
+    }
+}
+
+.opened {
+    transform: translateY(0);
 }
 
 .title-container {
@@ -50,9 +111,7 @@ div.large-circle {
     height: 550px;
     width: 550px;
     border-radius: 50%;
-    position: absolute;
     z-index: 1;
-
 }
 
 div.small-circle {
@@ -79,10 +138,23 @@ div.small-circle {
 .down-arrow {
     display: flex;
     justify-content: center;
-    margin-top: 80vh;
 
     img {
         height: 70px;
         width: 70px;
     }
 }
+
+.bounce {
+    animation: bounce 2500ms infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(15px);
+    }
+
+    60% {
+      transform: translateY(-10px);
+    }
+  }
