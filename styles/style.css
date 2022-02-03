@@ -542,6 +542,40 @@ div.small-circle {
   border-radius: 50%;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .resume-button {
+  margin-top: 10%;
+  background-color: #3a3a3a;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 200px;
+}
+.about .resume-button i {
+  font-size: 1.4rem;
+  color: #f4f4f2;
+}
+.about .resume-button p {
+  color: #f4f4f2;
+}
+
+.resume-button:hover,
+.resume-button:focus {
+  background-color: #fc5b1b;
+}
+
 .square-decoration {
   display: -webkit-box;
   display: -ms-flexbox;
