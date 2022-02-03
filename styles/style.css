@@ -382,8 +382,8 @@ header {
 
 .mobile-nav {
   position: fixed;
-  -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  -webkit-transform: translateY(-120%);
+          transform: translateY(-120%);
   -webkit-transition: 0.4s -webkit-transform ease;
   transition: 0.4s -webkit-transform ease;
   transition: 0.4s transform ease;
