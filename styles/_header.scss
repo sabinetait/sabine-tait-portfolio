@@ -85,7 +85,7 @@ header {
             a {
                 color: $dark-grey;
             }
-            
+
             a:hover,
             a:focus {
                 text-decoration: underline;
@@ -110,6 +110,9 @@ header {
 
 div.large-circle {
     background-color: $red-orange;
+    background-image: url(../assests/zigzag.png);
+    background-size: 125px;
+    background-repeat: repeat;
     height: 550px;
     width: 550px;
     border-radius: 50%;
