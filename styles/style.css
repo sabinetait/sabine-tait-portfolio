@@ -436,6 +436,9 @@ header {
 
 div.large-circle {
   background-color: #fc5b1b;
+  background-image: url(../assests/zigzag.png);
+  background-size: 125px;
+  background-repeat: repeat;
   height: 550px;
   width: 550px;
   border-radius: 50%;
@@ -515,6 +518,7 @@ div.small-circle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 3%;
 }
 .about-container .about-text {
   width: 60%;
@@ -527,6 +531,7 @@ div.small-circle {
 }
 .about-container .about-text p {
   line-height: 1.6rem;
+  padding-top: 2%;
 }
 .about-container .about-image {
   display: -webkit-box;
@@ -540,6 +545,16 @@ div.small-circle {
 .about-container .about-image img {
   width: 100%;
   border-radius: 50%;
+}
+.about-container .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about-container .about-text p {
+  margin-bottom: 0;
 }
 
 .about {
@@ -576,6 +591,10 @@ div.small-circle {
   background-color: #fc5b1b;
 }
 
+.about-title {
+  width: 100%;
+}
+
 .square-decoration {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,6 +625,9 @@ div.small-circle {
   margin-left: 2px;
 }
 
+.skills-gallery {
+  padding-top: 5%;
+}
 .skills-gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
