@@ -436,9 +436,6 @@ header {
 
 div.large-circle {
   background-color: #fc5b1b;
-  background-image: url(../assests/zigzag.png);
-  background-size: 125px;
-  background-repeat: repeat;
   height: 550px;
   width: 550px;
   border-radius: 50%;
@@ -474,8 +471,8 @@ div.small-circle {
           justify-content: center;
 }
 .down-arrow img {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
 }
 
 .bounce {
@@ -626,7 +623,8 @@ div.small-circle {
 }
 
 .skills-gallery {
-  padding-top: 5%;
+  padding: 4% 0;
+  width: 100%;
 }
 .skills-gallery ul {
   display: -webkit-box;

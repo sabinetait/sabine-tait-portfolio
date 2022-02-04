@@ -110,9 +110,6 @@ header {
 
 div.large-circle {
     background-color: $red-orange;
-    background-image: url(../assests/zigzag.png);
-    background-size: 125px;
-    background-repeat: repeat;
     height: 550px;
     width: 550px;
     border-radius: 50%;
@@ -145,8 +142,8 @@ div.small-circle {
     justify-content: center;
 
     img {
-        height: 70px;
-        width: 70px;
+        height: 80px;
+        width: 80px;
     }
 }
 
