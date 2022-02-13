@@ -5,18 +5,18 @@ $white: rgb(244, 244, 242);
 $dark-grey: rgb(58, 58, 58);
 
 // Imports
-@import "normalize";
+@import "./partials/normalize";
 
-@import "typography";
+@import "./partials/typography";
 
-@import "header";
+@import "./partials/header";
 
-@import "about";
+@import "./partials/about";
 
-@import "projects";
+@import "./partials/projects";
 
-@import "contact";
+@import "./partials/contact";
 
-@import "footer";
+@import "./partials/footer";
 
-@import "media-queries";
+@import "./partials/media-queries";

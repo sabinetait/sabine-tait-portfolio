@@ -306,6 +306,22 @@ a {
   text-decoration: none;
 }
 
+.skip-link {
+  position: absolute;
+  left: 250px;
+  top: -50px;
+  background-color: #f4f4f2;
+  padding: 1%;
+  color: #3a3a3a;
+  -webkit-transition: top 0.4s ease-out;
+  transition: top 0.4s ease-out;
+  z-index: 30;
+}
+
+.skip-link:focus {
+  top: 17px;
+}
+
 header {
   background-color: #f5e8e0;
   height: 100vh;
@@ -335,6 +351,9 @@ header {
           align-items: center;
   visibility: collapse;
   z-index: 20;
+  border: none;
+  padding: 0;
+  background-color: transparent;
 }
 .header-nav-container .hamburger i {
   font-size: 1.5rem;
@@ -394,6 +413,7 @@ header {
   right: 0;
   bottom: 0;
   z-index: 10;
+  visibility: hidden;
 }
 .mobile-nav ul {
   display: -webkit-box;
@@ -931,6 +951,10 @@ footer p i {
   }
 
   .header-nav-container .hamburger {
+    visibility: visible;
+  }
+
+  .mobile-nav {
     visibility: visible;
   }
 
