@@ -936,7 +936,7 @@ footer p i {
 
 @media (max-width: 950px) {
   .title {
-    left: 22%;
+    left: auto;
   }
   .title span {
     padding-left: 0px;
@@ -995,8 +995,8 @@ footer p i {
   }
 }
 @media (max-width: 750px) {
-  .title {
-    left: 12.5%;
+  .title-container {
+    width: 100%;
   }
 
   h1 {
@@ -1014,6 +1014,19 @@ footer p i {
     width: 150px;
     top: 60%;
     left: 60%;
+  }
+
+  .about-container .about-image {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-container .about-image img {
+    width: 250px;
   }
 
   .skills-gallery ul li {
