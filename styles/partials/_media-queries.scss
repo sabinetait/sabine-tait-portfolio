@@ -57,6 +57,16 @@
             width: 100%;
         }
     }
+
+    .contact {
+        flex-direction: column;
+        height: 40vh;
+        justify-content: space-between;
+
+        .contact-buttons {
+            margin: 0;
+        }
+    }
 }
 
 @media(max-width: 750px) {

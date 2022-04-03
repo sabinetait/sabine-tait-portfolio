@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assests/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assests/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assests/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"> 
     <script src="https://kit.fontawesome.com/20567435fb.js" crossorigin="anonymous"></script>
@@ -57,7 +56,7 @@
             </div> <!-- decorative circles and title -->
     
             <div class="down-arrow bounce">
-                <a href="#main-content" title="Main content"><img src="./assests/arrow-down.png" alt="Arrow down"></a>
+                <a href="#main-content"><img src="./assests/arrow-down.png" alt="Down arrow linking to main content"></a>
             </div>
         </div><!-- end of header wrapper2 -->
         
@@ -141,7 +140,7 @@
                     </ul>
                 </div> <!-- end of skills icon gallery -->
                 <div class="resume-container"> <!-- resume -->
-                    <a href="./assests/sabine-tait-resume.pdf" class="resume-button" title="Download Sabine Tait's resume" download="sabine-tait-resume">
+                    <a href="./assests/sabine-tait-resume.pdf" class="resume-button" download="sabine-tait-resume">
                         <i class="fas fa-file-download" aria-hidden="true"></i>
                         <p>Resume</p>
                     </a>
@@ -152,33 +151,26 @@
         </section>
     
         <section class="projects-section" id="projects">
-    
+
             <div class="wrapper"> <!-- beginning of projects section wrapper -->
     
                 <div class="projects-title">
                     <h2>Featured Projects</h2>
                 </div>
-
                 <div class="project-container reveal fade-in-left"> <!-- start project 1 -->
                     <div class="project-image">
-                        <img src="./assests/willow-project.webp" alt="Daily Musings of Willow website">
+                        <img src="./assests/bite-sized-traveling-project.webp" alt="Bite-Sized Traveling App">
                     </div>
                     
                     <div class="project-text">
-                        <h3>Daily Musings of Willow</h3>
-                        <p>Multi-page, responsive, blogger-style website PSD conversion project.</p>
-                        <div class="tools-container">
-                            <ul>
-                                <li><i class="fab fa-html5" aria-label="HTML5"></i></li>
-                                <li><i class="fab fa-sass" aria-label="Sass"></i></li>
-                                <li><i class="fab fa-js" aria-label="JavaScript ES6"></i></li>
-                            </ul>
-                        </div>
+                        <h3>Bite-Sized Traveling</h3>
+                        <p>Travel app created based off a client brief allowing users to create trips and add/remove restaurants to their list based on their search locations. The user is also able to add notes to specific restaurants. Created with data from the Yelp API with <a href="https://www.linkedin.com/in/ryan-van-den-eeckhout-3704a4a5/" class="peer-link" target="_blank">Ryan Van Den Eeckhout</a>, <a href="https://www.linkedin.com/in/rachel-holloway-web-dev" class="peer-link" target="_blank">Rachel Holloway</a>, and <a href="https://www.linkedin.com/in/justin-vien/" class="peer-link" target="_blank">Justin Vien</a>. <br>Made with: React, CSS3, REST APIs, Firebase.</p>
                         <div class="links-container">
-                            <a href="https://musingsofwillow.netlify.app/" title="Live webpage for Daily Musings of Willow project">Live</a>
-                            <a href="https://github.com/sabinetait/sabine-tait-project-one" title="Github repo for Daily Musings of Willow project">Repo</a>
+                            <a href="https://bitesizedtraveling-app.netlify.app/" target="_blank">Live Site</a>
+                            <a href="https://github.com/sabinetait/Project4" target="_blank">Source Code</a>
                         </div>
                     </div>
+ 
                 </div> <!-- end project 1 -->
 
                 <div class="project-container reveal fade-in-left"> <!-- start project 2 -->
@@ -189,18 +181,10 @@
                     
                     <div class="project-text">
                         <h3>Art D'eouvre</h3>
-                        <p>Art gallery app that displays to the user a random art 'bite' fetched from the Walters Art Museum API. Created with <a href="https://www.linkedin.com/in/saana-selvan/" class="peer-link" title="LinkedIn for Saana Selvan">Saana Selvan</a>.</p>
-                        <div class="tools-container">
-                            <ul>
-                                <li><i class="fab fa-html5" aria-label="HTML5"></i></li>
-                                <li><i class="fab fa-sass" aria-label="Sass"></i></li>
-                                <li><i class="fab fa-js" aria-label="JavaScript ES6"></i></li>
-                                <li><i class="fas fa-cogs" aria-label="REST APIs"></i></li>
-                            </ul>
-                        </div>
+                        <p>Art gallery app that displays to the user a random art 'bite' fetched from the Walters Art Museum API. Created with <a href="https://www.linkedin.com/in/saana-selvan/" class="peer-link" target="_blank">Saana Selvan</a>.<br>Made with: HTLM5, Sass, JavaScript ES6, REST APIs.</p>
                         <div class="links-container">
-                            <a href="https://artdoeuvre.netlify.app/" title="Live webpage for Art D'eouvre project">Live</a>
-                            <a href="https://github.com/sabinetait/artDOeuvre" title="Github repo for Art D'eouvre project">Repo</a>
+                            <a href="https://artdoeuvre.netlify.app/" target="_blank">Live Site</a>
+                            <a href="https://github.com/sabinetait/artDOeuvre" target="_blank">Source Code</a>
                         </div>
                     </div>
                 </div> <!-- end project 2 -->
@@ -212,44 +196,27 @@
                     
                     <div class="project-text">
                         <h3>Stars Align</h3>
-                        <p>Horoscope app that allows the user to get their daily horoscope and other compatibilities with data from aztroAPI based on their astrological sign and the current date.</p>
-                        <div class="tools-container">
-                            <ul>
-                                <li><i class="fab fa-css3-alt" aria-label="CSS3"></i></li>
-                                <li><i class="fab fa-react" aria-label="React"></i></li>
-                                <li><i class="fas fa-cogs" aria-label="REST APIs"></i></li>
-    
-                            </ul>
-                        </div>
+                        <p>Horoscope app that allows the user to get their daily horoscope and other compatibilities with data from aztroAPI based on their astrological sign and the current date.<br>Made with: React, CSS3, REST APIs.</p>
                         <div class="links-container">
-                            <a href="https://stars-align.netlify.app/" title="Live webpage for Stars Align project">Live</a>
-                            <a href="https://github.com/sabinetait/sabine-tait-project-three" title="Github repo for Stars Align Project">Repo</a>
+                            <a href="https://stars-align.netlify.app/" target="_blank">Live Site</a>
+                            <a href="https://github.com/sabinetait/sabine-tait-project-three" target="_blank">Source Code</a>
                         </div>
                     </div>
                 </div> <!-- end project 3 -->
 
                 <div class="project-container reveal fade-in-left"> <!-- start project 4 -->
                     <div class="project-image">
-                        <img src="./assests/bite-sized-traveling-project.webp" alt="Bite-Sized Traveling App">
+                        <img src="./assests/willow-project.webp" alt="Daily Musings of Willow website">
                     </div>
                     
                     <div class="project-text">
-                        <h3>Bite-Sized Traveling</h3>
-                        <p>Travel app created based off a client brief allowing users to create trips and add/remove restaurants to their list based on their search locations. The user is also able to add notes to specific restaurants. Created with data from the Yelp API with <a href="https://www.linkedin.com/in/ryan-van-den-eeckhout-3704a4a5/" class="peer-link" title="LinkedIn for Ryan Van Den Eeckhout">Ryan Van Den Eeckhout</a>, <a href="https://www.linkedin.com/in/rachel-holloway-web-dev" class="peer-link" title="LinkedIn for Rachel Holloway">Rachel Holloway</a>, and <a href="https://www.linkedin.com/in/justin-vien/" class="peer-link" title="LinkedIn for Justin Vien">Justin Vien</a>.</p>
-                        <div class="tools-container">
-                            <ul>
-                                <li><i class="fab fa-css3-alt" aria-label="CSS3"></i></li>
-                                <li><i class="fab fa-react" aria-label="React"></i></li>
-                                <li><i class="fas fa-cogs" aria-label="REST APIs"></i></li>
-                                <li> <i class="devicon-firebase-plain" aria-label="Firebase"></i></li>
-                            </ul>
-                        </div>
+                        <h3>Daily Musings of Willow</h3>
+                        <p>Multi-page, responsive, blogger-style website PSD conversion project.<br>Made with: HTML5, CSS3, JavaScript ES6.</p>
                         <div class="links-container">
-                            <a href="https://bite-sized-travel-project.netlify.app/" title="Live webpage for Bite-Sized Traveling project">Live</a>
-                            <a href="https://github.com/sabinetait/Project4" title="Github repo for Bite-Sized Traveling project">Repo</a>
+                            <a href="https://musingsofwillow.netlify.app/" target="_blank">Live Site</a>
+                            <a href="https://github.com/sabinetait/sabine-tait-project-one" target="_blank">Source Code</a>
                         </div>
                     </div>
- 
                 </div> <!-- end project 4 -->
     
             </div> <!-- end of projects section wrapper -->
@@ -278,23 +245,25 @@
                 <img src="./assests/personal-photo.webp" alt="Sabine drinking coffee">
 
                 <div class="contact">
-                    <a href="mailto: sabine.tait@gmail.com?subject=Hello Sabine, I saw your portfolio!" title="Opening default mail client to send email" class="email-button">
+                    <a href="mailto: sabine.tait@gmail.com?subject=Hello Sabine, I saw your portfolio!" class="contact-buttons">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <p>Let's chat!</p>
+                        <p>Email me!</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sabine-tait/" class="contact-buttons">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <p>LinkedIn</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sabine-tait/" class="contact-buttons">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <p>GitHub</p>
+                    </a>
+                    <a href="https://calendly.com/sabine-tait" class="contact-buttons">
+                        <i class="fas fa-calendar" aria-hidden="true"></i>
+                        <p>Calendly</p>
                     </a>
                 </div>
-
-
-                <nav class="socials-nav">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/sabine-tait/" title="Sabine Tait's LinkedIn"><i class="fab fa-linkedin-in" aria-label="link to LinkedIn"></i></a></li>
-                        <li><a href="https://github.com/sabinetait" title="Sabine Tait's Github"><i class="fab fa-github" aria-label="link to GitHub"></i></a></li>
-                        <li><a href="https://calendly.com/sabine-tait" title="Sabine Tait's Calendly"><i class="fas fa-calendar" aria-label="link to Calendly"></i></a></li>
-                    </ul>
-                </nav>
             </div> <!-- end of contact section wrapper -->
         </section>
-    
     </main>
     <footer>
         <div class="footer wrapper">
