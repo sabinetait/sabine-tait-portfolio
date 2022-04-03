@@ -33,7 +33,7 @@ portfolio.navToggle = () => {
         mobileNavElement.classList.remove('opened');
     }
 }
-// Reveal function that will add/remove the active class to project container at certain from the top viewport
+// Reveal function that will add/remove the active class to project container at certain height from the top viewport
 portfolio.reveal = () => {
     // Project section animation on scroll
     // Capture project containter element
@@ -45,9 +45,8 @@ portfolio.reveal = () => {
         const elementVisible = 150;
     if (elementTop < windowHeight - elementVisible) {
         revealElement[i].classList.add("active");
-    } else {
-        revealElement[i].classList.remove("active");
-        }
+    } 
+    // else do nothing (ie. "active" class remains on element so that once project container has translated in, the animation does not repeat unless page is refreshed)
     }
     // Add event listener to scroll, call the reveal function
     window.addEventListener("scroll", portfolio.reveal);

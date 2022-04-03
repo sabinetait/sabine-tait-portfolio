@@ -21,6 +21,8 @@
 
     .project-image {
         margin-right: 2%;
+        display: flex;
+        align-items: center;
 
         img {
             width: 100%;
@@ -39,16 +41,17 @@
 
         p {
             line-height: 1.6rem;
+            margin-bottom: 25px;
         }
 
         .peer-link {
             color: black;
+            text-decoration: underline;
         }
         
         .peer-link:hover,
         .peer-link:focus {
-            text-decoration: underline;
-            color: black;
+            color: $red-orange;
         }
 
         ul {
@@ -65,7 +68,7 @@
             a {
                 color: $light-orange;
                 background-color: black;
-                padding: 7px 35px;
+                padding: 12px 30px;
             }
 
             a:hover,
