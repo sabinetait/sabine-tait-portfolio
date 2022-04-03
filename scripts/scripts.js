@@ -33,8 +33,8 @@ portfolio.navToggle = () => {
     }
     
     portfolio.handleNavLinks = () => {
-        mobileNavElement.classList.remove('opened');
         bodyElement.classList.remove('stop-scroll');
+        mobileNavElement.classList.remove('opened');
     }
 }
 // Reveal function that will add/remove the active class to project container at certain height from the top viewport
