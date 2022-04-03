@@ -7,8 +7,9 @@ portfolio.init = () => {
 }
 // Toggle to hamburger menu at small media queries
 portfolio.navToggle = () => {
-    // Capture hamburger menu element
+    // Capture hamburger menu and body menu elements
     const hamburgerElement = document.querySelector('.hamburger');
+    const bodyElement = document.querySelector('body');
     // Capture nav element to manipulate 
     const mobileNavElement = document.querySelector('.mobile-nav');
     // Create an event listener for when the hamburger menu is clicked
@@ -20,6 +21,8 @@ portfolio.navToggle = () => {
         // when hamburger is clicked to open, header nav is displayed (adding opened class)
         // hamburger menu is clicked to close, header nav is hidden (removing opened class)
         mobileNavElement.classList.toggle('opened');
+        // Prevent scroll on body when nav menu is open
+        bodyElement.classList.toggle('stop-scroll');
         // Close hamburger menu when a mobile nav list link has been selected
         // Capture nav link element
         const mobileNavLinkElement = document.querySelectorAll(".menu-link");
@@ -31,6 +34,7 @@ portfolio.navToggle = () => {
     
     portfolio.handleNavLinks = () => {
         mobileNavElement.classList.remove('opened');
+        bodyElement.classList.remove('stop-scroll');
     }
 }
 // Reveal function that will add/remove the active class to project container at certain height from the top viewport

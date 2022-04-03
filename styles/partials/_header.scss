@@ -117,6 +117,10 @@ header {
     transform: translateY(0);
 }
 
+.stop-scroll {
+    overflow: hidden;
+}
+
 .title-container {
     position: relative;
 }
