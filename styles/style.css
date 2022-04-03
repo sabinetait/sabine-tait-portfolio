@@ -993,9 +993,7 @@ footer p i {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .contact .contact-buttons {
-    margin: 0;
+    margin: 20px;
   }
 }
 @media (max-width: 750px) {
@@ -1038,11 +1036,7 @@ footer p i {
   }
 
   .contact-container h3 {
-    margin: 7% 0;
-  }
-
-  .contact {
-    margin-bottom: 7% 0;
+    margin: 5% 0;
   }
 
   .socials-nav ul {
@@ -1147,10 +1141,6 @@ a {
   }
 
   .contact-container h3 {
-    margin: 20% 0;
-  }
-
-  .contact {
-    margin-bottom: 12% 0;
+    margin: 12% 0;
   }
 }

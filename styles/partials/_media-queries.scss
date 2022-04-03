@@ -62,10 +62,7 @@
         flex-direction: column;
         height: 40vh;
         justify-content: space-between;
-
-        .contact-buttons {
-            margin: 0;
-        }
+        margin: 20px;
     }
 }
 
@@ -115,14 +112,10 @@
 
     .contact-container {
         h3 {
-            margin: 7% 0;
+            margin: 5% 0;
         }
     }
     
-    .contact {
-        margin-bottom: 7% 0;
-    }
-
     .socials-nav {
         ul { 
             flex-direction: column;
@@ -236,11 +229,7 @@
 
     .contact-container {
         h3 {
-            margin: 20% 0;
+            margin: 12% 0;
         }
-    }
-    
-    .contact {
-        margin-bottom: 12% 0;
     }
 }
