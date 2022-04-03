@@ -432,10 +432,11 @@ header {
   padding-top: 15%;
 }
 .mobile-nav ul li {
-  padding: 3% 0;
+  padding: 5% 0;
 }
 .mobile-nav ul li a {
   color: rgb(58, 58, 58);
+  padding: 25px 200px;
 }
 .mobile-nav ul li a:hover,
 .mobile-nav ul li a:focus {
