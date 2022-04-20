@@ -692,6 +692,12 @@ div.small-circle {
   background-image: url(../assests/wave-pattern.png);
   background-size: 330px;
 }
+.projects-section .reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 
 .project-container {
   display: -webkit-box;
