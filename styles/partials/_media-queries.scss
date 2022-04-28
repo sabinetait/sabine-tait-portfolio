@@ -48,6 +48,12 @@
             }
         }
     }
+    .projects-section {
+        :nth-child(even) {
+            flex-direction: column;
+        }
+    
+    }
 
     .project-container {
         flex-direction: column;

@@ -6,10 +6,9 @@
     background-image: url(../assests/wave-pattern.png);
     background-size: 330px;
 
-    .reverse {
+    :nth-child(even) {
         flex-direction: row-reverse;
     }
-
 }
 
 .project-container {
