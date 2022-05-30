@@ -724,7 +724,7 @@ div.small-circle {
   width: 100%;
 }
 .project-container .project-text {
-  margin-left: 2%;
+  margin: 0 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
